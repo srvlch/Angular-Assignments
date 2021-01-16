@@ -1,0 +1,29 @@
+
+
+    <p class="panel-heading">
+    Users
+    </p>
+    <div class="panel-block" *ngIf="users.length>0; else noUserMessage">
+        <table class="table table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>User Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let user of users">
+                    <td>{{ user.name }}</td>
+                    <td>{{ user.email }}</td>
+                    <td>{{ user.userName }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <ng-template #noUserMessage>
+        <p class="message-body">no users are available.</p>
+    </ng-template> 
+
+
+
