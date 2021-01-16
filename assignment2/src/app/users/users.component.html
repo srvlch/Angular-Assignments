@@ -8,15 +8,15 @@
                 <thead>
                     <tr>
                         <th>Name</th>
-                        <th>Email</th>
                         <th>User Name</th>
+                        <th>Email</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr *ngFor="let user of users">
                         <td>{{ user.name }}</td>
-                        <td appHighlighter>{{ user.email }}</td>
                         <td>{{ user.userName }}</td>
+                        <td appHighlighter>{{ user.email }}</td>
                     </tr>
                 </tbody>
             </table>
